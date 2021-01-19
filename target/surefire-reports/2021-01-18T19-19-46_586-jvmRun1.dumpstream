@@ -1,0 +1,51 @@
+# Created at 2021-01-18T19:19:52.873
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2021-01-18T19:19:53.215
+Unexpected IOException with stream: 2021-01-18 19:19:53.214  INFO 5887 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2021-01-18T19:19:53.798
+Unexpected IOException with stream: 2021-01-18 19:19:53.798  WARN 5887 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2021-01-18T19:19:54.344
+Unexpected IOException with stream: 2021-01-18 19:19:54.343  INFO 5887 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2021-01-18T19:19:55.137
+Unexpected IOException with stream: 2021-01-18 19:19:55.137  INFO 5887 --- [           main] main.RadektestesLeonApplicationTests     : Started RadektestesLeonApplicationTests in 6.651 seconds (JVM running for 8.142)
+
+
+# Created at 2021-01-18T19:19:55.144
+Unexpected IOException with stream: 2021-01-18 19:19:55.143  INFO 5887 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+
+# Created at 2021-01-18T19:19:55.145
+Unexpected IOException with stream: 2021-01-18 19:19:55.144  INFO 5887 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2021-01-18T19:19:55.146
+Unexpected IOException with stream: 2021-01-18 19:19:55.145  INFO 5887 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+
+
+# Created at 2021-01-18T19:19:55.151
+Unexpected IOException with stream: 2021-01-18 19:19:55.150  INFO 5887 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+
+# Created at 2021-01-18T19:19:55.155
+Unexpected IOException with stream: 2021-01-18 19:19:55.154  INFO 5887 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+
+
+# Created at 2021-01-18T19:19:55.194
+Unexpected IOException with stream: 2021-01-18 19:19:55.194  INFO 5887 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+

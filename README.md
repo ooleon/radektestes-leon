@@ -46,7 +46,6 @@ _Na linha de comando vai para a <br> pasta no projeto radektestes-leon_ | cd ./r
 _Para testar pode usar o seguinte comando_ | 	`mvn test -q -B -Dtest=RadektestesLeonApplicationTests install`
 _A solucao esta na clase <strong>CalcularString</strong>_ | 	`radektestes-leon/src/main/java/main/CalcularString.java`
 
-
 ##7. Diferentes animais de estimacão dogs e cats
 
 Indicacao    | Comando

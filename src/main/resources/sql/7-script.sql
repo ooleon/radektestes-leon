@@ -1,10 +1,11 @@
 # resposta 7
+/*
 select distinct name from 
 	(select d.name as name from dogs d
 		union
 	select c.name as name from cats c ) as animais_de_estimacao;
 
-/*
+*/
 # criacao das tabelas dogs e cats
 CREATE TABLE dogs
 (
@@ -29,4 +30,8 @@ insert into cats (name) value ('Julia');
 insert into cats (name) value ('Linda');
 insert into cats (name) value ('Fofinha');
 insert into cats (name) value ('Julia');
-*/
+
+select distinct name from 
+	(select d.name as name from dogs d
+		union
+	select c.name as name from cats c ) as animais_de_estimacao;

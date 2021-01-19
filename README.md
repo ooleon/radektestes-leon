@@ -1,76 +1,56 @@
-# Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'localhost.spring-boot-standar' is invalid and this project uses 'localhost.springbootstandar' instead.
+# Read Me Primeiro
 
 # Comentarios
 
-## primeiros pasos de analise e desenvolvimento
-1. leer las indicaciones superficialmente entender los primeros requisitos basicos y ambiente como crear un repositorio github donde esten los teste de java y sql. crear projecto java spring jpa donde esté lo que mas comodo me siento para mostrar test basicos.
-2. Clonar git remoto, copiar projecto java a git local.
-	Configurar las dependencias basicas de maven.
-	Probar que spring test, junit e jpa funcionen, hacer push al git remoto.
-	Garantir a conexao com github.
-3. al tener previamente un ejercicio de FizzBuzz, copié el codigo y lo adaprte para cumplir con la pregunta nº 1.
-4. leer con atencion nuevamente las preguntas, seleccionar realizar primero las que me parecian mas simples.
-5. Actualizar constantemente el presente archivo readm.md mientras vamos respondiendo las preguntas.
-6.
+## Primeiros pasos de analise e desenvolvimento
+1. ler as instruções superficialmente para entender o contexto e os primeiros requisitos básicos e o ambiente de para criar um repositório github onde estão os testes java e sql. criar o projeto java spring jpa onde me sentir mais confortável para mostrar os testes básicos.
+2. Clone o git remoto, copie o projeto java para o git local.
+Configure dependências maven básicas.
+Fazer um primer teste para garantir que junit e jpa funcionam, empurrei para git remoto.
+Garantia relação com o github.
+3. Eu ja tinha feito um exercício FizzBuzz anteriormente, copiei o código e adaptei-o para atender à pergunta nº 1.
+4. Leia as perguntas com atenção novamente, selecione primeiro as que parecerem mais simples.
+5. Atualize constantemente este arquivo readm.md à medida que respondemos às perguntas.
 
-# Lista con los archivos con las respuestas a cada pregunta e como testar:
-1. Identificacao
-2. FooBaa imprimir multiplos de 3 e 5
-	_vai para a pasta no projeto radektestes-leon_
-	cd ./radektestes-leon/
-	`mvn test -q -B -Dtest=RadektestesLeonApplicationTests install`
-3.
-4. Escreva uma consulta SQL para ajudar Eva.
-5.
-6.
-7.
+# Lista com os archivos das respostas a cada pregunta e como testar:
 
-# Getting Started
+##1. Identificacao
 
-### Reference Documentation
-For further reference, please consider the following sections:
+##2. FooBaa imprimir multiplos de 3 e 5
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.7.RELEASE/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.7.RELEASE/maven-plugin/reference/html/#build-image)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#using-boot-devtools)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#boot-features-developing-web-applications)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.4.1/reference/htmlsingle/#boot-features-jpa-and-spring-data)
+Indicacao    | Comando
+------------ | -------------
+_Na linha de comando vai para a <br> pasta no projeto radektestes-leon_ | cd ./radektestes-leon/
+_Para testar pode usar o seguinte comando_ | 	`mvn test -q -B -Dtest=RadektestesLeonApplicationTests install`
+_A solucao esta na clase_ <strong>FooBaa</strong> | 	`radektestes-leon/src/main/java/main/FooBaa.java`
 
-### Guides
-The following guides illustrate how to use some features concretely:
+##4. Escreva uma consulta SQL para ajudar Eva.
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/)
+Indicacao    | Comando
+------------ | -------------
+_pasta no projeto /radektestes-leon/src/main/resources/sql/<br> vai ter o arquivo de script SQL, <br> pode seguir a os comentarios que estão dentro do arquivo_  	|	4-script.sql
+_Foram criadas as tabelas Alunos e Notas  <br> e inseridas com dados semelhantes como no enunciado_  	|	CREATE TABLE Alunos  <br> CREATE TABLE Notas  <br> Insert values(...)  <br> CREATE VIEW problema4_relatorio_eva
+<br> <br> _Para simular o ambiente debe rodar os scrips indicados no arquivo onde finalmente vai conseguir <br> uma view con a solucão da pergunta_  	|	 <br>  <br> select  <br>  case  <br> 	when n.nota = 7 then NULL <br>     else a.nome <br> end as name1, n.NOTA,  <br> .Valor <br> from Alunos a join Notas n on a.valor between  n.valor_min  and n.valor_max  <br> order by n.NOTA desc; <br> 
 
 
-Quick setup — if you’ve done this kind of thing before
-or
+##5. Duas clases C e B que herdan de uma clase A todas com o mesmo metodo.
 
-Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
-…or create a new repository on the command line
+_resposta indicada no formulario do site que é Polimorfismo_
 
-echo "# radektestes-leon" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ooleon/radektestes-leon.git
-git push -u origin main
-                
 
-…or push an existing repository from the command line
+##6. Calcular String sem usar instrucções tal como strlen() ou lenght());
 
-git remote add origin https://github.com/ooleon/radektestes-leon.git
-git branch -M main
-git push -u origin main
+Indicacao    | Comando
+------------ | -------------
+_Na linha de comando vai para a <br> pasta no projeto radektestes-leon_ | cd ./radektestes-leon/
+_Para testar pode usar o seguinte comando_ | 	`mvn test -q -B -Dtest=RadektestesLeonApplicationTests install`
+_A solucao esta na clase <strong>CalcularString</strong>_ | 	`radektestes-leon/src/main/java/main/CalcularString.java`
 
-…or import code from another repository
 
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+##7. Diferentes animais de estimacão dogs e cats
+
+Indicacao    | Comando
+------------ | -------------
+_pasta no projeto /radektestes-leon/src/main/resources/sql/<br> vai ter o arquivo de script SQL, <br> pode seguir a os comentarios que estão dentro do arquivo_  	|	 <br>  <br> "7-script.sql"
+_Foram criadas as tabelas dogs e cats  <br> e inseridas com dados semelhantes como no enunciado_  	|	CREATE TABLE dogs <br> CREATE TABLE cats
+ <br> _a pos de ser inseridas com dados com nomes <br> duplos de cachorros e gatos, foram usadas <br> as instruçoes <strong>UNION</strong> e <strong>DISTINCT</strong>_  	|	 <br> select distinct name from  <br> (select d.name as name from dogs d <br> 		union <br> 	select c.name as name from cats c ) as animais_de_estimacao;

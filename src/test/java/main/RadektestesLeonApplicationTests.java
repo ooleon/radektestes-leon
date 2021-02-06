@@ -11,13 +11,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class RadektestesLeonApplicationTests {
 
-private static final Logger log = LoggerFactory.getLogger(CalcularString.class);
+private static final Logger log = LoggerFactory.getLogger(RadektestesLeonApplication.class);
 
 	@BeforeEach
 	public void contextLoads() {
 	}
 
-	@Test
+//	@Test
 	public void fooBaa() {
 		System.out.println("proba FooBaa");
 		FooBaa testFooBaa = new FooBaa();

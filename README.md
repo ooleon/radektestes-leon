@@ -24,6 +24,13 @@ _Na linha de comando vai para a <br> pasta no projeto radektestes-leon_ | cd ./r
 _Para testar pode usar o seguinte comando_ | 	`mvn test -q -B -Dtest=RadektestesLeonApplicationTests install`
 _A solucao esta na clase_ <strong>FooBaa</strong> | 	`radektestes-leon/src/main/java/main/FooBaa.java`
 
+##3. Escrever um código para determinar se sim ou não pode ser fazer um processo em número dado de operações.
+Indicacao    | Comando
+------------ | -------------
+_Na linha de comando vai para a <br> pasta no projeto radektestes-leon_ | cd ./radektestes-leon/
+_Para testar pode usar o seguinte comando_ | 	`mvn test -q -B -Dtest=ConcatERemoveTests install`
+_A solucao esta na clase <strong>ConcatERemove</strong>_ | 	`radektestes-leon/src/main/java/main/ConcatERemove.java`
+
 ##4. Escreva uma consulta SQL para ajudar Eva.
 
 Indicacao    | Comando
